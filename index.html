@@ -30,32 +30,66 @@
     <title>Home Page</title>
 </head>
 
+<style>
+     #panel,#flip{
+	padding:5px;
+	text-align:center;
+	background-color:#e5eecc;
+	border: solid 1px #c3c3c3;
+	}
+
+	#panel{
+	padding:20px;
+	display:none;}
+</style>
 <body>
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand">Navbar</a>
 
             <div class="form"> <i class="fa fa-search"></i> <input type="text" class="form-control form-input"
-                    placeholder="Search anything..."> <span class="left-pan"><i class="fa fa-microphone"></i></span>
+                    placeholder="Search anything..."> <a href="#"><span class="left-pan"><i class="fa fa-microphone"></i></span></a>
             </div>
         </div>
+
     </nav>
     <div class="container-fluid bg-warning">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <a class="nav-link active" aria-current="page" href="#">Bedroom Accessories</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Couch Furniture</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Tables</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">TV Units</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cupboard Units</a>
             </li>
         </ul>
     </div>
+     <!--Start voice -->
+<div id="flip"> Voice Control</div>
+<div id="panel" class="container text-center">
+	<div class="row">
+		<div class="col-sm-4" style="margin-top:15px">
+			 <input type="button" onclick="startArtyom()" value="Start voice commands"/><br><br>
+		</div>
+		<div class="col-sm-4" id="load-voices" style="border:1px solid">
+			 <span id="output" style="font-size:20px;color:black;"></span></br>
+			  <span id="time" style="font-size:35px;color:green;"></span><br>
+			
+		</div>
+		<div class="ccol-sm-4" style="margin-top:15px">
+			 <input type="button" onclick="stopArtyom()" value="Stop voice command"/><br>
+			<div id="voices-item"></div>
+		</div>
+	</div>
+</div><!-- End of voice-->
 
     <div>
         <!-- Carousel -->
@@ -80,14 +114,14 @@
                 <div class="carousel-item">
                     <img src="light-logo.jpg" alt="Chicago" class="d-block" style="width:100%">
                     <div class="carousel-caption">
-                        <h3>Chicago</h3>
+                        <h3>Couch Furniture</h3>
                         <p>Thank you, Chicago!</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="sofa.jpg" alt="New York" class="d-block" style="width:100%">
                     <div class="carousel-caption">
-                        <h3>New York</h3>
+                        <h3>Tables</h3>
                         <p>We love the Big Apple!</p>
                     </div>
                 </div>
@@ -131,9 +165,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
                                             </div>
                                         </div>
                                     </div>
@@ -142,9 +177,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
 
                                             </div>
                                         </div>
@@ -154,9 +190,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
 
                                             </div>
                                         </div>
@@ -166,9 +203,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
 
                                             </div>
                                         </div>
@@ -186,9 +224,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
                                             </div>
                                         </div>
                                     </div>
@@ -197,9 +236,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
 
                                             </div>
                                         </div>
@@ -209,9 +249,10 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
 
                                             </div>
                                         </div>
@@ -221,9 +262,11 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                   <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
+                                                   
 
                                             </div>
                                         </div>
@@ -238,16 +281,16 @@
     </section>
     <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 p-2">
-            <img src="bedroom.jpg" style="width:100%">
+        <div class="col-md-6 p-2" style="height: 50%;">
+            <img src="bedAcc.jpg" style= "width:100%">
         </div>
-        <div class="col-md-6 p-2">
-            <img src="bedroom.jpg" style="width:100%">
+        <div class="col-md-6 p-2" style="height: 50%;">
+            <img src="sofafur.jpg" style="width:100%">
         </div>
     </div>
-    <div class="row" style="height: 50%;">
+    <div class="row" style="height: 30%;">
         <div class="col-md-12 p-2">
-            <img src="bedroom.jpg" alt="" style="width: 100%;">
+            <img src="bedAcc.jpg" alt="" style="width: 100%;">
         </div>
     </div>
 
@@ -276,11 +319,13 @@
                                     <div class="col-md-3 mb-3">
                                         <div class="card">
                                             <img class="img-fluid" alt="100%x280"
-                                                src="https://images.unsplash.com/photo-1532781914607-2031eca2f00d?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=7c625ea379640da3ef2e24f20df7ce8d">
+                                                src="bedAcc.jpg">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                    <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
+
                                             </div>
                                         </div>
                                     </div>
@@ -289,9 +334,11 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                    <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
+
 
                                             </div>
                                         </div>
@@ -301,9 +348,11 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                    <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">Buy Now</button>
+
 
                                             </div>
                                         </div>
@@ -313,9 +362,11 @@
                                             <img class="img-fluid" alt="100%x280"
                                                 src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a">
                                             <div class="card-body">
-                                                <h4 class="card-title">Special title treatment</h4>
+                                                <h4 class="card-title">Bed</h4>
                                                 <p class="card-text">With supporting text below as a natural lead-in to
                                                     additional content.</p>
+                                                    <button type="button" class="btn btn-success">Add to Cart</button> <button type="button" class="btn btn-light">+</button>
+
 
                                             </div>
                                         </div>
@@ -331,6 +382,10 @@
     </section>
 
 </div>
+
+<!--Floating button-->
+
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -460,5 +515,185 @@
   <!-- Footer -->
 </body>
 
+<script src="index.js"></script>
+<script src="voice.js"></script>
 
+<script> 
+$("#talk-lang").click(function(){
+    artyom.say($("#text-content").val());
+});
+
+$("#select-voice").change(function(){
+    var lang = $(this).val();
+
+    artyom.initialize({lang:lang});
+});
+
+document.getElementById("load-voices").addEventListener("click", function(){
+    var voices = artyom.getVoices();
+    var html = "";
+
+    voices.forEach(function(voice){
+        html += "Voz name : " + voice.name + " con lang : " + voice.lang + "<br>";
+    });
+
+    document.getElementById("voices-item").innerHTML = html;
+}, false);
+  // Now we add the most important point of the plugin, the commands
+  // This library is very flexible and now we will see why :
+  // Every command is a literal object
+  artyom.addCommands([
+    {
+      description:"Artyom can talk too, lets say something if we say hello",
+      indexes:["hello","hey"],
+      action:function(i){
+          // i = the index of the array of indexes option
+
+          if(i == 0){
+            //You say : "hello"
+            document.getElementById('time').innerHTML = "Hello ! how can i help you";
+          }
+      }
+    },
+    {
+      description:"Say roll down to scroll down",
+      indexes:["down"],
+      action:function scrolldown() {
+                window.scrollBy(0, 500);
+                    }
+    },
+    {
+      description:"Say roll up to scroll up",
+      indexes:["up"],
+      action:function scrollup() {
+                window.scrollBy(0, -500);
+                    }
+    },
+    {
+      description:"Say Open Music for Music Page",
+      indexes:["open category"],
+      action:function page() {
+                    window.location.href = "category.php"
+                    
+                    
+                    }
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["open Contact"],
+      action:function page2() {
+      
+                    window.location.href = "contact.html"
+                    
+                    }
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["open sofa"],
+      action:function page3() {
+                    window.location.href = "product.html"
+                    }
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["open rack"],
+      action:function page4() {
+                    window.location.href = "product.html"
+                    }
+                    
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["Bambo Stand With  Dining"],
+      action:function page7() {
+                    window.location.href = "product.html"
+                    }
+                    
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["opencart"],
+      action:function page5() {
+                  $("#gc").click();
+                            }
+    },
+    {
+      description:"Say Open video for videos Page",
+      indexes:["shoping cart"],
+      action:function page5() {
+                  $("#sb").click();
+                            }
+    },
+    
+    
+    {
+      description:"Say Open video for videos Page",
+      indexes:["shoping cart"],
+      action:function page6() {
+                  
+                     window.location.href = "cart.html"
+                            }
+    }
+    
+    
+  ]);
+
+
+  // Redirect the recognized text
+  artyom.redirectRecognizedTextOutput(function(text,isFinal){
+    var span = document.getElementById('output');
+
+    if(isFinal){
+      span.innerHTML = '';
+    }else {
+      span.innerHTML = text;
+    }
+  });
+
+  function startArtyom(){
+    artyom.initialize({
+      lang:"en-GB",// More languages are documented in the library
+      continuous:true,//if you have https connection, you can activate continuous mode
+      debug:true,//Show everything in the console
+      listen:true // Start listening when this function is triggered
+      
+    });
+  }
+
+  function stopArtyom(){
+    artyom.fatality();
+  }
+
+  window.onload = function(){
+      var tab = document.getElementById("commands-list");
+      var commands =  artyom.getAvailableCommands();
+      var html = '';
+
+      for(var i = 0;i < commands.length;i++){
+          var command = commands[i];
+          html += command.description + " : <span style='color:blue;'>"+command.indexes.toString()+"</span><br>";
+      }
+
+      tab.innerHTML = html;
+
+      artyom.initialize({lang:"es-ES"});
+
+    var vocesitas = [
+        {lang:"es-ES",description: "Espanol"},
+        {lang:"de-DE",description: "Deutsch"},
+        {lang:"pt-PT",description: "Portugues"},
+        {lang:"it-IT",description: "Italiano"}
+    ];
+
+    vocesitas.forEach(function(voice){
+        $('#select-voice').append($('<option>', {value:voice.lang, text:voice.description}));
+    });
+  };
+  
+  $(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideToggle("fast");
+        });
+    });
+</script>
 </html>
